@@ -9,6 +9,11 @@
     .service_grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    /* .contact_container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    } */
 }
 
 @media (width > 768px) {
@@ -60,9 +65,10 @@
     .service_grid {
         grid-template-columns: repeat(3, 1fr);
     }
-
     .contact_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
     }
+
 }
+
+

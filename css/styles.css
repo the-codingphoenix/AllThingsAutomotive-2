@@ -17,9 +17,8 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    scroll-behavior: smooth;
+html, body {
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -183,9 +182,10 @@ nav {
 
 .service_card img {
     max-width: 150px;
+    height: 150px;
     margin-inline: auto;
     margin-bottom: 1rem;
-    border-radius: 200%;
+    border-radius: 50%;
     box-shadow: 5px 5px 20px rgba(158, 25, 25, 0.71);
 }
 
