@@ -15,15 +15,20 @@ navLinks.addEventListener("click", (e) =>{
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-//menu selection
-// const navLinks2 = document.querySelectorAll('nav a');
-// for (var i = 0; i < navLinks2.length; i++) {
-//     navLinks2[i].addEventListener('click', function() {
-//         var current = document.getElementsByClassName('active');
-//         current[0].className = current[0].className.replace(' active', '');
-//         this.className += ' active';
-//     });
-// }
+document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById('ctaVideo');
+    var fallbackImage = document.getElementById('fallbackImage');
+
+    video.onerror = function() {
+        video.style.display = 'none';
+        fallbackImage.style.display = 'block';
+    };
+
+    video.oncanplay = function() {
+        fallbackImage.style.display = 'none';
+        video.style.display = 'block';
+    };
+});
 
 // scroll
 const scrollRevealOptions = {
