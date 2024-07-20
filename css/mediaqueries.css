@@ -1,68 +1,3 @@
-@media (width > 900px) {
-    .header {
-        padding-block: 0;
-    }
-    .logo img {
-        max-width: 200px;
-    }
-    nav {
-        padding: 1rem;
-        position: static;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: transparent;
-    }
-    .nav_menu_btn {
-        display: none;
-    }
-    .nav_links {
-        padding: 0 ;
-        width: unset;
-        position: static;
-        transform: none;
-        flex-direction: row;
-        background-color: transparent;
-    }
-    .nav-bar {
-        background-color: transparent;
-    }
-
-    .header_content {
-        margin: 0 10%;
-    }
-
-    .header_content h1 {
-        margin-bottom: 3rem;
-        font-size: 4.5rem;
-        line-height: 6rem;
-    }
-    .experience_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .service_grid {
-        gap: 2rem;
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (width < 900px) and (width > 700px) {
-    .header_content {
-        margin: 20% 10%;
-    }
-    .header_content h1 {
-        font-size: 4.5rem;
-        line-height: 6rem;
-    }
-    .experience_container {
-        grid-template-columns: 1fr;
-    }
-    .service_grid {
-        gap: 2rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 @media (width > 480px) {
     .header_content {
         padding-left: 3rem;
@@ -84,5 +19,87 @@
         display: flex;
         width: 100%;
         justify-content: center;
+    } */
+}
+
+@media (width > 700px) {
+
+    /* .video-container {
+        height: 80%;
+    } */
+    .header_content {
+        margin: 0;
+    }
+
+    .header_content h1 {
+        padding: 0;
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    .logo img {
+        max-width: 200px;
+    }
+
+    nav {
+        padding: 2rem 1rem;
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+    }
+
+    .nav_bar {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav_menu_btn {
+        display: none;
+    }
+
+    .nav_links {
+        padding: 0;
+        width: unset;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        background-color: transparent;
+    }
+    .footer_logo {
+        margin-bottom: 1rem;
+        width: 200px;
+    }
+
+}
+
+@media (width > 720px) {
+
+    .experience_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .service_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width > 860px) {
+    /* .contact_container {
+        width: 60%;
+    } */
+}
+
+@media (width > 1500) {
+    /* .contact_container {
+        width: 40%;
+    } */
+}
+
+@media (width > 1640) {
+    /* .contact_container {
+        width: 20%;
     } */
 }

@@ -20,11 +20,12 @@
 <body>
     <header class="header">
        <div class="video-container">
+        <picture class="background-media">
             <video autoplay muted loop class="background-video">
                 <source src="./videos/bg.mp4" type="video/mp4">
-                Your browser does not support the video tag.
             </video>
-            <!-- <div class="video-overlay"></div> -->
+            <img src="./images/bg.jpg" alt="FallBack Image">
+        </picture>
        </div>
         <nav>
             <div class="nav_bar">
@@ -125,10 +126,12 @@
     </section>
 
     <section class="contact" id="contact">
-        <video autoplay muted loop class="cta-video">
-            <source src="./videos/cta.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <picture class="cta-media">
+            <video autoplay muted loop class="cta-video">
+                <source src="./videos/cta.mp4" type="video/mp4">
+            </video>
+            <img src="./images/bg2.jpg" alt="FallBack Image">
+        </picture>
         <div class="section_container contact_container">
             <div class="contact_content">
                 <p class="section_subheader" data-aos="fade-down">Contact Us</p>
