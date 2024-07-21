@@ -15,21 +15,6 @@ navLinks.addEventListener("click", (e) =>{
     menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    var video = document.getElementById('ctaVideo');
-    var fallbackImage = document.getElementById('fallbackImage');
-
-    video.onerror = function() {
-        video.style.display = 'none';
-        fallbackImage.style.display = 'block';
-    };
-
-    video.oncanplay = function() {
-        fallbackImage.style.display = 'none';
-        video.style.display = 'block';
-    };
-});
-
 // scroll
 const scrollRevealOptions = {
     distance: "50px",
