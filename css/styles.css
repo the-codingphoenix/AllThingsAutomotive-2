@@ -202,7 +202,8 @@ nav {
 
 .experience_container {
     text-align: center;
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
