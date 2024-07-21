@@ -203,7 +203,7 @@ nav {
 .experience_container {
     text-align: center;
     display: block;
-    /* gap: 2rem; */
+    gap: 2rem;
 }
 
 .experience_image img {
