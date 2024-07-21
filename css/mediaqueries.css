@@ -77,29 +77,21 @@
 @media (width > 730px) {
 
     .experience_container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
+        flex-direction: row;
+    }
+    .experience_content {
+        max-width: 50%; /* Adjust the width as needed */
+        padding: 20px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
+    }
+    
+    .experience_image {
+        max-width: 50%; /* Adjust the width as needed */
+        padding: 20px;
+        box-sizing: border-box; /* Ensures padding doesn't affect width */
     }
 
     .service_grid {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-@media (width > 860px) {
-    /* .contact_container {
-        width: 60%;
-    } */
-}
-
-@media (width > 1500) {
-    /* .contact_container {
-        width: 40%;
-    } */
-}
-
-@media (width > 1640) {
-    /* .contact_container {
-        width: 20%;
-    } */
 }
